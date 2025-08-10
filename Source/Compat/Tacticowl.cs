@@ -1,19 +1,14 @@
-﻿using HarmonyLib;
-using SimpleSidearms.rimworld;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+using HarmonyLib;
+using MySidearms.Rimworld;
 using Verse;
 using Verse.AI;
 using static HarmonyLib.AccessTools;
-using static PeteTimesSix.SimpleSidearms.Compat.VFECore;
 
-namespace PeteTimesSix.SimpleSidearms.Compat
+namespace MySidearms.Compat
 {
     [StaticConstructorOnStartup]
     public static class Tacticowl
@@ -54,7 +49,7 @@ namespace PeteTimesSix.SimpleSidearms.Compat
                 }
                 catch (Exception ex)
                 {
-                    Log.Warning("SS: Failed to initialize compat. with Tacticowl. Compat will be disabled. Exception: " + ex.ToString());
+                    Log.Warning("MS: Failed to initialize compat. with Tacticowl. Compat will be disabled. Exception: " + ex.ToString());
 
                     active = false;
 
@@ -75,7 +70,7 @@ namespace PeteTimesSix.SimpleSidearms.Compat
             //harmony.Patch(AccessTools.Method(dualWieldExtensions, "SetOffHander"), postfix: new HarmonyMethod(typeof(Tacticowl), nameof(SetOffHander_Postfix)));
 
             var jobDriver_EquipOffHand_initAction = AccessTools.FirstMethod(AccessTools.TypeByName("Tacticowl.DualWield.JobDriver_EquipOffHand"), (MethodInfo m) => m.Name == "<MakeNewToils>b__1_0");
-            SimpleSidearms.Harmony.Patch(jobDriver_EquipOffHand_initAction, transpiler: new HarmonyMethod(AccessTools.Method(typeof(Tacticowl), nameof(Tacticowl.JobDriver_EquipOffHand_initAction_Transpiler))));
+            MySidearms.Harmony.Patch(jobDriver_EquipOffHand_initAction, transpiler: new HarmonyMethod(AccessTools.Method(typeof(Tacticowl), nameof(Tacticowl.JobDriver_EquipOffHand_initAction_Transpiler))));
         }
 
         public static void JobDriver_EquipOffHand_initAction_Infix(Pawn pawn, ThingWithComps thing) 

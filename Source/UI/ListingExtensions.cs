@@ -1,10 +1,9 @@
 ﻿using System;
 using UnityEngine;
 using Verse;
+using static MySidearms.UI.UIComponents;
 
-using static PeteTimesSix.SimpleSidearms.UI.UIComponents;
-
-namespace PeteTimesSix.SimpleSidearms.UI
+namespace MySidearms.UI
 {
     public static class ListingExtensions
     {

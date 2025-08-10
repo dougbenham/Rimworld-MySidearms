@@ -1,15 +1,13 @@
-﻿using RimWorld;
-using SimpleSidearms.rimworld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using UnityEngine;
+using MySidearms.Rimworld;
+using RimWorld;
 using Verse;
-using static PeteTimesSix.SimpleSidearms.SimpleSidearms;
-using static PeteTimesSix.SimpleSidearms.Utilities.Enums;
+using static MySidearms.MySidearms;
+using static MySidearms.Utilities.Enums;
 
-namespace PeteTimesSix.SimpleSidearms.Utilities
+namespace MySidearms.Utilities
 {
     public static class StatCalculator
     {

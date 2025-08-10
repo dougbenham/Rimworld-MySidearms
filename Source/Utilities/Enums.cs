@@ -1,4 +1,4 @@
-﻿namespace PeteTimesSix.SimpleSidearms.Utilities
+﻿namespace MySidearms.Utilities
 {
     public static class Enums
     {

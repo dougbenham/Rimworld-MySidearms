@@ -1,12 +1,10 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MySidearms.Utilities;
+using RimWorld;
 using Verse;
 
-namespace PeteTimesSix.SimpleSidearms
+namespace MySidearms
 {
     public static class SkillStatMap
     {

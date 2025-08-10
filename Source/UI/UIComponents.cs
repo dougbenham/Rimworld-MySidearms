@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Verse;
 
-namespace PeteTimesSix.SimpleSidearms.UI
+namespace MySidearms.UI
 {
     public static class UIComponents
     {

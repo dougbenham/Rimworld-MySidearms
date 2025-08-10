@@ -1,12 +1,8 @@
-﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using HarmonyLib;
 using Verse;
 
-namespace PeteTimesSix.SimpleSidearms.Compat
+namespace MySidearms.Compat
 {
     [StaticConstructorOnStartup]
     public static class VFECore
@@ -31,7 +27,7 @@ namespace PeteTimesSix.SimpleSidearms.Compat
                 }
                 catch (Exception ex)
                 {
-                    Log.Warning("SS: Failed to initialize compat. with VEF. Compat will be disabled. Exception: "+ex.ToString());
+                    Log.Warning("MS: Failed to initialize compat. with VEF. Compat will be disabled. Exception: " + ex.ToString());
 
                     active = false;
 

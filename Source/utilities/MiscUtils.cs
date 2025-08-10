@@ -1,16 +1,10 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
+﻿using System;
+using RimWorld;
 using Verse;
-using Verse.AI;
-using Verse.Sound;
-using static PeteTimesSix.SimpleSidearms.SimpleSidearms;
-using static PeteTimesSix.SimpleSidearms.Utilities.Enums;
+using static MySidearms.MySidearms;
+using static MySidearms.Utilities.Enums;
 
-namespace PeteTimesSix.SimpleSidearms.Utilities
+namespace MySidearms.Utilities
 {
     public static class MiscUtils
     {

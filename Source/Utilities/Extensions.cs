@@ -1,14 +1,14 @@
-﻿using HarmonyLib;
-using PeteTimesSix.SimpleSidearms.Compat;
-using RimWorld;
-using SimpleSidearms.rimworld;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using HarmonyLib;
+using MySidearms.Compat;
+using MySidearms.Rimworld;
+using RimWorld;
 using UnityEngine;
 using Verse;
-using static PeteTimesSix.SimpleSidearms.Utilities.Enums;
+using static MySidearms.Utilities.Enums;
 
-namespace PeteTimesSix.SimpleSidearms
+namespace MySidearms.Utilities
 {
     public static class Extensions
     {

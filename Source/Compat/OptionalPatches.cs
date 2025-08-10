@@ -1,14 +1,8 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using System;
+using HarmonyLib;
 using Verse;
 
-namespace PeteTimesSix.SimpleSidearms.Compat
+namespace MySidearms.Compat
 {
     public static class OptionalPatches
     {
@@ -28,7 +22,7 @@ namespace PeteTimesSix.SimpleSidearms.Compat
                 }
                 catch (Exception e) 
                 {
-                    Log.Error("SS: Error during patching Tacticowl: " + e);
+                    Log.Error("MS: Error during patching Tacticowl: " + e);
                 }
             }
         }

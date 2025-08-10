@@ -1,16 +1,14 @@
-﻿using RimWorld;
-using SimpleSidearms.rimworld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MySidearms.Rimworld;
+using MySidearms.Utilities;
+using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
-using static PeteTimesSix.SimpleSidearms.Utilities.Enums;
 
-namespace PeteTimesSix.SimpleSidearms.UI
+namespace MySidearms.UI
 {
     public static class SidearmsSpecificExtensions
     {

@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UnityEngine;
+using Verse;
 
-namespace PeteTimesSix.SimpleSidearms.UI
+namespace MySidearms.UI
 {
-    using global::Verse;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using UnityEngine;
-
     namespace Verse
     {
         // Token: 0x020003D0 RID: 976
